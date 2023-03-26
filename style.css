@@ -307,7 +307,8 @@ header{
         background-color:#f8f8f8 ;
     }
     .main__title{
-        flex-grow: 0.8;
+        margin-left:16px;
+        flex-grow: 0.9;
     }
     .main__actions{
         margin-top: 20px;
@@ -343,6 +344,7 @@ header{
     .about__navigation {
         display: flex;
         flex-wrap: wrap;
+        margin-left:12px;
     }
 
 }
