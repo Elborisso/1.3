@@ -82,7 +82,7 @@ header{
 
 
 
-.logo_link{
+.header__logo-link{
     margin: 8px;
     width: 100%;
     display: flex;
@@ -91,7 +91,7 @@ header{
     position: relative;
     flex-grow: 1;
 }
-.logo_link::after{
+.header__logo-link::after{
     content: '';
     position: absolute;
     border-left: 2px solid #eaeaea;
@@ -143,12 +143,10 @@ header{
 .third_picture{
     display:none;
 }
-.main__item_1{
+.main__item{
     display: none;
 }
-.main__item_2{
-    display: none;
-}
+
 .main__navigation{
     padding-top: 8px;
     padding-bottom: 0px;
@@ -188,7 +186,7 @@ header{
 .navigation_item:hover{
     border: 2px solid #41f6d7;
 }
-.content_text{
+.content__text{
     padding: 16px;
     font-family: "TT Lakes";
     font-size: 14px;
@@ -196,7 +194,7 @@ header{
     letter-spacing: 0.2px;
     text-align: left;
 }
-.content_button_readnext{
+.content__show-more-button{
     display: flex;
     background-color: #f8f8f8;
     font-family: "TT Lakes";
@@ -206,12 +204,13 @@ header{
     letter-spacing: -0.2px;
     text-align: left;
     gap: 16px;
+    cursor:pointer;
 }
-.content_button_readnext::before{
+.content__show-more-button::before{
     content: url(/images/arrow.svg)
 }
 
-.contet_text_wrapper{
+.contet__wrapper{
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -236,7 +235,7 @@ header{
         margin-right: px;
         margin-left: 24px;
     }
-    .logo_link{
+    .header__logo-link{
         margin-left: 32px;
         width: 100%;
         display: flex;
@@ -245,7 +244,7 @@ header{
         flex-grow: 1;
     }
 
-    .logo_link::after {
+    .header__logo-link::after {
         content: '';
         position: absolute;
         border-left: 2px solid #eaeaea;
@@ -283,12 +282,10 @@ header{
     .header_text{
         display:none;
     }
-    .main__item_1{
+    .main__item{
         display: none;
     }
-    .main__item_2{
-        display: none;
-    }
+    
     .content {
         display: flex;
         flex-direction: row;
@@ -316,15 +313,12 @@ header{
         justify-content: flex-start;
     }
     
-    .main__item_1{
+    .main__item{
         padding-top: 18px;
         display: inline;
         padding-right: 40px;
     }
-    .main__item_2{
-        padding-top: 18px;
-        display: inline;
-    }
+  
     .main__actions__text {
         font-size: 18px;
         display: inline-block;
